@@ -1,0 +1,26 @@
+{
+  "name": "screeps-dg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -cw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DawnGruel/screeps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DawnGruel/screeps/issues"
+  },
+  "homepage": "https://github.com/DawnGruel/screeps#readme",
+  "devDependencies": {
+    "@types/lodash": "^3.10.1",
+    "@types/screeps": "^3.2.2",
+    "rollup": "^2.50.1"
+  }
+}
