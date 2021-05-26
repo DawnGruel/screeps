@@ -1,9 +1,9 @@
 // 工蜂行动
-const HR = require('role.harvester')
+import HR from './role.harvester'
 // 核心工蜂行动
-const UR = require('role.upgrader')
+import UR from './role.upgrader'
 // 建造工蜂行动
-const BR = require('role.builder')
+import BR from './role.builder'
 
 module.exports = {
   HR, UR, BR,
@@ -21,7 +21,7 @@ module.exports = {
         this.brain(creep)
       }
     }
-    // console.log(creepName)
+    console.log(creepName)
   },
   // 大脑🧠
   brain: function (creep) {
@@ -68,7 +68,7 @@ module.exports = {
   },
   // 行动
   doWork: function (creep) {
-    // console.log('工蜂行动')
+    console.log('工蜂行动')
     if (creep.memory.role === 'Harvester') this.HR.run(creep)
     if (creep.memory.role === 'Upgrader') this.UR.run(creep)
     if (creep.memory.role === 'Builder') this.BR.run(creep)
