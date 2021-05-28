@@ -1,14 +1,13 @@
 // 嗅觉探测器
-const OD = require('./olfactoryDetector')
+import OD from './olfactoryDetector';
 // 民法典
-const CC = require('./law-code-civil')
+import CC from './law-code-civil';
 // 国王权杖
-const KC = require('./KingController')
+import KC from './KingController';
 // 字典库
-const dictionaries = require('./dictionaries.index')
+import dictionaries from './dictionaries.index';
 // 基础行动
-const role = require('./role.creep')
+import role from './role.creep';
 // 记忆库
-const memory = require('./memory')
-
-module.exports = { OD, KC, CC, role, dictionaries, memory }
+import memory from './memory';
+export default { OD, KC, CC, role, dictionaries, memory }

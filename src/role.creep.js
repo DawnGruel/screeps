@@ -5,7 +5,7 @@ import UR from './role.upgrader'
 // 建造工蜂行动
 import BR from './role.builder'
 
-module.exports = {
+export default {
   HR, UR, BR,
   init () {
     $.OD.census()

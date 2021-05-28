@@ -1,4 +1,4 @@
-import { errorMapper } from './modules/errorMapper'
+// import { errorMapper } from './modules/errorMapper'
 // 意识体
 import index from './index'
 // 工具
@@ -9,11 +9,14 @@ global.$ = index;
 global.$u = utils;
 // $u.print(Boolean('false'))
 // 获取升级信息
+// console.log()
+$u.print($)
+module.exports.loop = function() {
+  
 
-export const loop = errorMapper(() => {
-  console.log('loop in')
   // 工蜂行动
   $.memory.init()
   $.role.init()
   // $.OD.gameGcl()
-})
+} 
+// loop()
